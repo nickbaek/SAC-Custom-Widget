@@ -325,7 +325,6 @@
 	   (b+" directly from "+c+"."));google.v.w.H.yc=new Promise(function(h){var m=google.v.w.H.Cd(d&&d.callback);google.v.w.Ha.load(g,k).then(m).then(h)})};google.v.w.H.Cd=function(b){return function(){if(typeof b===K&&""!==b)try{U.Jb(b)()}catch(c){throw Error("Callback failed with: "+c);}}};
 	   google.v.w.H.Zh=function(b){for(var c=[],d=0;d<arguments.length;++d)c[d-0]=arguments[d];switch(c[0]){case "maps":google.v.w.H.gn.apply(google.v.w.H,T.cd(c));break;case "elements":google.v.w.H.en.apply(google.v.w.H,T.cd(c));break;case "visualization":google.v.load.apply(google.v,T.cd(c));break;default:google.v.w.H.Gi.apply(google.v.w.H,T.cd(c))}};google.v.w.H.Dn=function(b){typeof b===K&&(b=google.v.w.H.Cd(b),google.v.w.ha.Ci().then(b))};
 	   google.v.w.H.Cn=function(b){if(typeof b===K)try{if(""!==b)for(var c=JSON.parse(b).modules,d=T.Dd(c),e=d.next();!e.done;e=d.next()){var f=e.value;google.v.w.H.Zh(f.name,f.version,f)}}catch(g){throw Error("Autoload failed with: "+g);}};google.v.w.H.Ul=function(){U.Jb("google.load")||(U.Cc("google.load",google.v.w.H.Zh),U.Cc("google.setOnLoadCallback",google.v.dj))};google.v.w.H.En();}).call(this);
-
 	//Google Gauge END
 
 	let template = document.createElement("template");
@@ -351,27 +350,7 @@
 		}
 
 		connectedCallback(){
-			// var ctx = this.shadowRoot.getElementById('chart_div');
-			// google.charts.load('current', {'packages':['gauge']});
-			// google.charts.setOnLoadCallback(drawChart);
-
-			// function drawChart() {
-			// 	var data = google.visualization.arrayToDataTable([
-			// 	['Label', 'Value'],
-			// 	['Memory', 20]
-			// 	]);
-
-			// 	var options = {
-			// 	width: 400, height: 120,
-			// 	redFrom: 90, redTo: 100,
-			// 	yellowFrom:75, yellowTo: 90,
-			// 	minorTicks: 5
-			// 	};
-
-			// 	var chart = new google.visualization.Gauge(ctx);
-
-			// 	chart.draw(data, options);
-			// }
+			
 		}
 
 		onCustomWidgetBeforeUpdate(changedProperties) {
